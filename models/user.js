@@ -1,10 +1,13 @@
+console.log('user model is running')
+
+
 var mongoose = require('mongoose');
 
 var paintingSchema = new mongoose.Schema({
   name: String,
   year: String,
   artist: String,
-  price: Number
+  price: Number,
   meta: {
     likes: Number
   }

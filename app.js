@@ -14,11 +14,11 @@ mongoose.Promise = global.Promise;
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({
-  extended: true;
+  extended: true
 }))
 
 app.use('/users', user_routes)
-app.use('/paintings', painting_routes)
+  // app.use('/paintings', painting_routes)
 
 app.listen(port);
 console.log('Server running at port ' + port);

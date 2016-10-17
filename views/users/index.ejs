@@ -1,0 +1,16 @@
+<%# include relative path to the partials file %>
+<% include ../partials/header.ejs  %>
+
+<h1>ALL Users Details</h1>
+<h2><%= message %></h2>
+
+<ul>
+    <% usersArr.forEach(function(user) { %>
+      <li>
+        User Name: <%= user.name %><br>
+        User Paintings: <%= user.paintings %><br>
+        <br><br>
+      </li>
+    <% }) %>
+</ul>
+<% include ../partials/footer.ejs  %>
